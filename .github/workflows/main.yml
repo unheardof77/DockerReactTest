@@ -12,5 +12,5 @@ jobs:
       uses: actions/setup-node@v1
     - name: npm install and test
       run: |
-        npm install
+        cd react-client && npm install
         cd react-client && npm test
