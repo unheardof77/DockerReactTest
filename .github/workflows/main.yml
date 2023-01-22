@@ -13,4 +13,4 @@ jobs:
     - name: npm install and test
       run: |
         cd react-client && npm install
-        cd react-client && npm test
+        npm test
