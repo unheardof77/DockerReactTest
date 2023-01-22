@@ -12,9 +12,9 @@ export default function Counter(){
 
     return (
         <>
-            <button data-testid="firstBtn" onClick={increment}>Inc</button>
-            <p>{count}</p>
-            <button data-testid="secondBtn" onClick={dec}>Dec</button>
+            <button data-testid="firstBtn"  className='' onClick={increment}>Inc</button>
+            <p data-testid="count">{count}</p>
+            <button data-testid="secondBtn" className=''  onClick={dec}>Dec</button>
         </>
     )
 }

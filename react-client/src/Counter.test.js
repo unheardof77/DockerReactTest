@@ -1,11 +1,11 @@
 import Counter from "./Counter";
-import { getByTestId, render, screen } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
-test("Buttons should have appropriate classes", ()=>{
-    render(<Counter/>);
-    const firstBtn = getByTestId('firstBtn');
-    const secondBtn = getByTestId('secondBtn');
-
-    expect(firstBtn).toHaveClass('testClass')
-    expect(secondBtn).toHaveClass('testClass')
+it("Count goes up and down properly", ()=>{
+    const { queryByTestId, getByTestId } = render(<Counter/>);
+    expect(queryByTestId("count").innerHTML).toBe("0");
+    fireEvent.click(getByTestId("firstBtn"));
+    expect(queryByTestId("count").innerHTML).toBe("1");
+    fireEvent.click(getByTestId("secondBtn"));
+    expect(queryByTestId("count").innerHTML).toBe("0");
 })
