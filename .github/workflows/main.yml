@@ -9,9 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: SetUp node
-        uses: actions/setup-node@v1
-        with:
-          node-version: v16.17.1
+      - uses: actions/setup-node@v1
       - name: npm install and test
       - run: npm install
       - run: cd react-client && npm test
