@@ -1,0 +1,23 @@
+{
+  "name": "dockerreacttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unheardof77/DockerReactTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unheardof77/DockerReactTest/issues"
+  },
+  "homepage": "https://github.com/unheardof77/DockerReactTest#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
