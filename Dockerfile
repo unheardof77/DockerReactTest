@@ -1,8 +1,8 @@
 FROM node:18-alpine
-WORKDIR /react-client
+WORKDIR /dockerReactTest
 COPY . .
 RUN npm install
 RUN npm run build
 ENV NODE_ENV production
 EXPOSE 3000
-CMD ["npx", "serve", "build"]
+CMD ["node", "server.js"]
